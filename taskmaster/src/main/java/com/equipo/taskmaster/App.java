@@ -9,6 +9,7 @@ ArrayList<>();
     addTask("Estudiar Maven");
     addTask("Leer sobre CI/CD");
     printTasks();
+    printEnv();
   }
 
     public static void addTask(String task) {
@@ -22,5 +23,7 @@ ArrayList<>();
        }
    }
 
-   System.out.println("Ambiente: " + System.getProperty("env.name"))
+    public static void printEnv() {
+        System.out.println("Ambiente: " + System.getProperty("env.name"));
+   }
 }

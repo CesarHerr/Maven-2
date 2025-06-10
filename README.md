@@ -21,5 +21,8 @@ mvn exec:java
 
 - Se actualiza pom.xml
 
+mvn clean package
+mvn exec:java
+
 
 mvn exec:java -Pdev -Denv.name=Dev
