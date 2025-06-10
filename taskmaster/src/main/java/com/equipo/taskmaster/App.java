@@ -11,13 +11,16 @@ ArrayList<>();
     printTasks();
   }
 
-public static void addTask(String task) {
- tasks.add(task);
- }
- public static void printTasks() {
- System.out.println("Tareas pendientes:");
- for (String t : tasks) {
- System.out.println("- " + t);
- }
- }
+    public static void addTask(String task) {
+    tasks.add(task);
+    }
+    
+    public static void printTasks() {
+        System.out.println("Tareas pendientes:");
+        for (String t : tasks) {
+        System.out.println("- " + t);
+       }
+   }
+
+   System.out.println("Ambiente: " + System.getProperty("env.name"))
 }
